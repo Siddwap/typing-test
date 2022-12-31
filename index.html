@@ -13,38 +13,38 @@
               <a class="navbar-brand fs-2 text-white">Sd Typing</a>
               <div class="d-flex" role="search">
                 <select id="data" class="form-select" aria-label="Select Paragraph">
-                    <option disabled selected>Select Paragraph</option>
-                    <option value="">Para 1</option>
-                        <option value="">Para 2</option>
-                        <option value="">Para 3</option>
-                        <option value="">Para 4</option>
-                        <option value="">Para 5</option>
-                        <option value="">Para 6</option>
-                        <option value="">Para 7</option>
-                        <option value="">Para 8</option>
-                        <option value="">Para 9</option>
-                        <option value="">Para 10</option>
-						<option value="">Para 11</option>
-                        <option value="">Para 12</option>
-                        <option value="">Para 13</option>
-                        <option value="">Para 14</option>
-                        <option value="">Para 15</option>
-                        <option value="">Para 16</option>
-                        <option value="">Para 17</option>
-                        <option value="">Para 18</option>
-                        <option value="">Para 19</option>
-                        <option value="">Para 20</option>
-						<option value="">Para 21</option>
-                        <option value="">Para 22</option>
-                        <option value="">Para 23</option>
-                        <option value="">Para 24</option>
-                        <option value="">Para 25</option>
-                        <option value="">Para 26</option>
-                        <option value="">Para 27</option>
-                        <option value="">Para 28</option>
-                        <option value="">Para 29</option>
-                        <option value="">Para 30</option>
-						<option value="">Para 31</option>
+                    <option value="0" disabled selected>Select Paragraph</option>
+                    <option value="1">Para 1</option>
+                        <option value="2">Para 2</option>
+                        <option value="3">Para 3</option>
+                        <option value="4">Para 4</option>
+                        <option value="5">Para 5</option>
+                        <option value="6">Para 6</option>
+                        <option value="7">Para 7</option>
+                        <option value="8">Para 8</option>
+                        <option value="9">Para 9</option>
+                        <option value="10">Para 10</option>
+						<option value="11">Para 11</option>
+                        <option value="12">Para 12</option>
+                        <option value="13">Para 13</option>
+                        <option value="14">Para 14</option>
+                        <option value="15">Para 15</option>
+                        <option value="16">Para 16</option>
+                        <option value="17">Para 17</option>
+                        <option value="18">Para 18</option>
+                        <option value="19">Para 19</option>
+                        <option value="20">Para 20</option>
+						<option value="21">Para 21</option>
+                        <option value="22">Para 22</option>
+                        <option value="23">Para 23</option>
+                        <option value="24">Para 24</option>
+                        <option value="25">Para 25</option>
+                        <option value="26">Para 26</option>
+                        <option value="27">Para 27</option>
+                        <option value="28">Para 28</option>
+                        <option value="29">Para 29</option>
+                        <option value="30">Para 30</option>
+						<option value="31">Para 31</option>
                   </select>
                   <button id="start" class="btn btn-success btn-lg">Start</button>
               </div>
@@ -82,11 +82,7 @@
         <div id="result" class="container d-none shadow p-3 mb-5 bg-body-tertiary rounded fs-4">
             <div class="row">
                 <div class="col-12 bg-success text-white">Your Test Submitted Sucessfully. Here Are Your Details</div>
-                <div class="col-6">
-                    <div>Wrong Words</div>
-                    <div id="wp" class="overflow-auto w-100" style="height: 400px"></div>
-                </div>
-                <div class="col-6">
+                <div class="col-12">
                     <div>Result</div>
                     <div>Gross Speed : <span id="gSpeed">00</span> WPM</div>
                     <div>Net Speed : <span id="nSpeed">00</span> WPM</div>
@@ -95,7 +91,6 @@
                     <div>Typed Words : <span id="tyWord">00</span></div>
                     <div>Wrong Words : <span id="wWord">00</span></div>
                     <div>Totle KeyStrokes : <span id="toKey">00</span></div>
-                    <div>Typed KeyStrokes : <span id="tyKey">00</span></div>
                     <div>Totle Time : <span id="toTime">00</span> Minutes</div>
                     <div>Taken Time : <span id="taTime">00</span></div>
                 </div>
@@ -103,7 +98,7 @@
             </div>
           </div>
     </div>
-    <script src="script2.js"></script>
+    <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>
 </html>
