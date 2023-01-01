@@ -11,6 +11,26 @@
         <nav class="navbar bg-primary">
             <div class="container-fluid">
               <a class="navbar-brand fs-2 text-white">Sd Typing</a>
+              <div class="bg-white rounded" id="backSpaceBox">
+                <div class="form-check ms-5 me-5">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Backspace Enabled
+                    </label>
+                  </div>
+                  <div class="form-check ms-5 me-5">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" onclick="oneWordBackspace()">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      One Word Backspace
+                    </label>
+                  </div>
+                  <div class="form-check ms-5 me-5">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" onclick="backspaceDisable()">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Backspace Disabled
+                    </label>
+                  </div>
+              </div>
               <div class="d-flex" role="search">
                 <select id="data" class="form-select" aria-label="Select Paragraph">
                     <option value="0" disabled selected>Select Paragraph</option>
@@ -59,7 +79,7 @@
                     <div class="container-fluid shadow p-3 mt-3 mb-5 bg-body-tertiary rounded" style="height:500px;">
                         <div class="row">
                             <div id="para" class="col-12 border rounded-3 overflow-auto fs-5 p-3" style="height:200px;"></div>
-                            <div class="col-12 mt-1" style="height:200px;"><textarea id="textarea" class="w-100 h-100 fs-5" style="cursor: not-allowed;" disabled></textarea></div>
+                            <div class="col-12 mt-1" style="height:200px;"><textarea id="textarea" class="w-100 h-100 fs-5" style="cursor: not-allowed;" disabled spellcheck="false"></textarea></div>
                             <div class="col-12 mt-3"><button id="submit" class="btn btn-lg btn-danger disabled">Submit</button></div>
                         </div>
                     </div>
@@ -67,7 +87,7 @@
                 <div class="col-lg-3 col-md-12 shadow p-3 mb-5 bg-body-tertiary rounded">
                     <div class="row mt-5 justify-content-evenly border shadow p-3 mb-5 bg-body-tertiary rounded">
                         <div class="col-12 fs-2 text-center">Time</div>
-                        <div id="minute" class="col-5 fs-3 text-center bg-primary rounded text-white">00</div>
+                        <div id="minute" class="col-5 fs-3 text-center bg-primary rounded text-white">15</div>
                         <div id="second" class="col-5 fs-3 text-center bg-warning rounded text-white">00</div>
                     </div>
                     <div>Paragraph Complete...</div>
